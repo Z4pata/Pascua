@@ -1,6 +1,6 @@
-import {config} from 'vite';
+import {defineConfig} from 'vite';
 
-export default config({
+export default defineConfig({
     build: {
         outdir: 'dist'
     },
