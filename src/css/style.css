@@ -1,0 +1,105 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #FFBBCC, #FFEB3B);
+  text-align: center;
+  color: #2c3e50;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+  background: #ff3b6f;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Estilos del contenido */
+.content {
+  margin-top: 40px;
+  position: relative;
+}
+
+.magic-button {
+  padding: 20px 40px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 105, 97, 0.5);
+}
+
+.magic-button:hover {
+  background-color: #f1c40f;
+  box-shadow: 0 0 25px rgba(255, 105, 97, 0.7);
+}
+
+/* Animación del Conejo */
+.rabbit-img {
+  margin-top: 5%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Elemento oculto */
+.hidden {
+  display: none;
+}
+
+/* Animación del fondo */
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #555;
+  animation: float 5s ease-in-out infinite alternate;
+}
